@@ -4,10 +4,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        //Day1a();
-        //Day1b();
-        //Day2a();
-        Day2b();
+        Day3b();
     }
 
     public static void Day1a() {
@@ -39,6 +36,22 @@ public class Main {
         Day2b day2b = new Day2b("C:\\aoc2024\\day2a.txt");
 
         int result = day2b.getSafeResults();
+        System.out.println(result);
+    }
+
+    public static void Day3a() throws IOException {
+        // hardcoded file paths because I can't be bothered to set up args parsing
+        Day3a day3a = new Day3a("C:\\aoc2024\\day3.txt");
+
+        int result = day3a.getResult();
+        System.out.println(result);
+    }
+
+    public static void Day3b() throws IOException {
+        // hardcoded file paths because I can't be bothered to set up args parsing
+        Day3b day3b = new Day3b("C:\\aoc2024\\day3.txt");
+
+        int result = day3b.getResult();
         System.out.println(result);
     }
 }
