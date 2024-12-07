@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Day3b();
+        Day4b();
     }
 
     public static void Day1a() {
@@ -52,6 +52,22 @@ public class Main {
         Day3b day3b = new Day3b("C:\\aoc2024\\day3.txt");
 
         int result = day3b.getResult();
+        System.out.println(result);
+    }
+
+    public static void Day4a() throws IOException {
+        // hardcoded file paths because I can't be bothered to set up args parsing
+        Day4a day4a = new Day4a("C:\\aoc2024\\day4.txt");
+
+        int result = day4a.countOptions();
+        System.out.println(result);
+    }
+
+    public static void Day4b() throws IOException {
+        // hardcoded file paths because I can't be bothered to set up args parsing
+        Day4b day4b = new Day4b("C:\\aoc2024\\day4.txt");
+
+        int result = day4b.countOptions();
         System.out.println(result);
     }
 }
