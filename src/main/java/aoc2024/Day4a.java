@@ -2,13 +2,14 @@ package aoc2024;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Day4a {
     private final List<String> lines;
     private final String charset = "XMAS";
-    public Day4a(String filePath) {
+    public Day4a(String filePath) throws IOException {
         this.lines= new ArrayList<>();
         try {
             FileReader fr = new FileReader(filePath);
@@ -21,6 +22,7 @@ public class Day4a {
             fr.close();
         } catch(Exception e) {
             System.out.println("Day 4a file reading error: " + e);
+            throw e;
         }
     }
 

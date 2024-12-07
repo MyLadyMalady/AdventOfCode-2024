@@ -2,12 +2,13 @@ package aoc2024;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Day4b {
     private final List<String> lines;
-    public Day4b(String filePath) {
+    public Day4b(String filePath) throws IOException {
         this.lines= new ArrayList<>();
         try {
             FileReader fr = new FileReader(filePath);
@@ -20,6 +21,7 @@ public class Day4b {
             fr.close();
         } catch(Exception e) {
             System.out.println("Day 4b file reading error: " + e);
+            throw e;
         }
     }
 
